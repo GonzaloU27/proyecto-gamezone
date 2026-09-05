@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameZone</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="row justify-content-center" >
+                <h1><strong>GameZone</strong></h1>
+                <img src="img/portada.jpg" alt="portada inicial gamezone" width="650" height="450">
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="login.html">Inicio sesión</a>
+                    <a href="#registro">Registro de Usuario </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="home">
+        </section>
+        <!--
+        Agregar estructura registro 
+        - nombre completo
+        - correo electrónico
+        - contraseña
+        - confirmación contraseña
+        - teléfono
+        - género favorito
+        -->
+        <!-- FORMULARIO REGISTRO -->
+        <section id="registro">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-8 col-lg-6">
+
+                        <h2 class="text-center mb-4">
+                            Registro de usuario
+                        </h2>
+
+                        <form action=""
+                            id="formulario-registro"
+                            class="border rounded py-4 px-4 shadow big-white">
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">
+                                    Nombre completo
+                                </label>
+                                <input 
+                                type="text"
+                                id="nombre"
+                                class="form-control"
+                                placeholder="Ingrese su nombre"
+                            >                         
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="correo" class="form-label">
+                                    Correo electrónico
+                                </label>
+                                <input 
+                                type="email"
+                                id="correo"
+                                class="form-control"
+                                placeholder="nombre@correo.cl">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="contrasena" class="form-label">
+                                    Contraseña
+                                </label>
+                                <input 
+                                type="password"
+                                id="contrasena"
+                                class="form-control"
+                                placeholder="Ingrese una contraseña">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="contrasena2" class="form-label">
+                                    Confirmar contraseña
+                                </label>
+                                <input 
+                                type="password"
+                                id="contrasena2"
+                                class="form-control"
+                                placeholder="Confirme su contraseña">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="telefono" class="form-label">
+                                    Teléfono +56
+                                </label>
+                                <input 
+                                type="number"
+                                id="telefono"
+                                class="form-control"
+                                placeholder="111 11 111">
+                            </div>
+
+                            <div class="mb-3">
+                                <p>Tipo de Género</p>
+                                <div class="container">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="row">
+
+                                                <!-- Primera columna de mi card -->
+
+                                                <div class="col-6">
+
+                                                    <div class="form-check">
+                                                        <input 
+                                                        type="checkbox"
+                                                        id="ficcion"
+                                                        >
+                                                        <label for="ficcion">FICCIÓN</label>
+                                                    </div>
+
+                                                    <div class="form-check">
+                                                        <input 
+                                                        type="checkbox"
+                                                        id="no-ficcion"
+                                                        >
+                                                        <label for="no-ficcion">NO FICCIÓN</label>
+                                                    </div>
+
+                                                    <div class="form-check">
+                                                        <input 
+                                                        type="checkbox"
+                                                        id="misterio"
+                                                        >
+                                                        <label for="misterio">MISTERIO</label>
+                                                    </div>
+
+                                                </div> 
+                                            
+                                                <!-- Segunda columna de mi card -->
+
+                                                <div class="col-6">
+
+                                                    <div class="form-check">
+                                                        <input 
+                                                        type="checkbox"
+                                                        id="terror"
+                                                        >
+                                                        <label for="terror">TERROR</label>
+                                                    </div>
+
+                                                    <div class="form-check">
+                                                        <input 
+                                                        type="checkbox"
+                                                        id="suspenso"
+                                                        >
+                                                        <label for="suspenso">SUSPENSO</label>
+                                                    </div>
+
+                                                    <div class="form-check">
+                                                        <input 
+                                                        type="checkbox"
+                                                        id="historia"
+                                                        >
+                                                        <label for="historia">HISTORIA</label>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>         
+                                        </div>
+                                    </div>
+                                </div>    
+                            </div>
+                                <button type="submit" class="btn btn-primary w-100">
+                                    REGISTRAR
+                                </button>
+                            <div
+                            id="mensaje-resultado-r"
+                            class="mt-4"
+                            role="alert">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="contacto">
+        <h2 class="mb-3"><strong>Contactanos</strong></h2>
+        <p><strong>Correo:</strong> gamezone@store.com</p>
+        <p><strong>Fono:</strong> +569 9324 159</p>
+    </footer>
+</body>
+</html>
